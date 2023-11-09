@@ -1,8 +1,10 @@
 library(testthat)
+
 test_data_no_na <- data.frame(
   group = c("a", "b", "b"),
   summary = c(1, 2, 3)
 )
+
 test_that("function works on vector with no NA's", {
   result <- summarize_col_by_group(test_data_no_na, "group", "summary")
   expect_equal(nrow(result), 2)
@@ -17,6 +19,7 @@ test_that("function works on vector with no NA's", {
   expect_equal(result_b$max_value, 3)
   expect_equal(result_b$min_value, 2)
 })
+
 test_that("function works on vector has NA's", {
   test_data_with_na <- test_data_no_na
   test_data_with_na$summary[c(1, 2)] <- NA
@@ -29,6 +32,7 @@ test_that("function works on vector has NA's", {
   expect_equal(result_b$max_value, 3)
   expect_equal(result_b$min_value, 3)
 })
+
 test_that("function works on vector of a different type", {
   test_data_diff <- data.frame(
     group = c("a", "b", "b"),
@@ -37,3 +41,5 @@ test_that("function works on vector of a different type", {
 
   expect_error(summarize_col_by_group(test_data_diff, "group", "summary"))
 })
+
+rm(test_data_no_na)

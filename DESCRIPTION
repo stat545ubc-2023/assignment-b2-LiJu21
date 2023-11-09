@@ -1,8 +1,8 @@
 Package: summarizeColByGroup
 Title: Summarize Data by Group
-Version: 0.1.0
+Version: 1.0.0
 Authors@R: 
-    person("Li", "Ju", , "liju0621@gmail.com", role = c("aut", "cre"),
+    person("Li", "Ju", , "juli0221@student.ubc.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: The package provides a method for grouping a data by a specified column and calculating statistics for another specified column. With this package, users can quickly calculate group-wise statistics like average, maximum, and minimum.
 Imports:
