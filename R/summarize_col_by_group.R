@@ -1,3 +1,4 @@
+#' @import dplyr
 #' @title Summarize a column by a group
 #' @details This function groups the data by a specified column and calculates statistics for another specified column.
 #' @param df The data we will manipulate.

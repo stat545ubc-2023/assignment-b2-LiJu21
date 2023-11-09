@@ -1,12 +1,15 @@
 Package: summarizeColByGroup
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Summarize Data by Group
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Li", "Ju", , "liju0621@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: The package provides a method for grouping a data by a specified column and calculating statistics for another specified column. With this package, users can quickly calculate group-wise statistics like average, maximum, and minimum.
+Imports:
+    dplyr
+Suggests:
+    testthat (>= 3.0.0)
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
